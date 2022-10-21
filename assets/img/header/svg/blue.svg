@@ -1,0 +1,9 @@
+<svg id="Regular_blob" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="271.696" height="93.065" viewBox="0 0 271.696 93.065">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.393" y1="-0.04" x2="0.411" y2="0.984" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#2f374e"/>
+      <stop offset="1" stop-color="#09173e"/>
+    </linearGradient>
+  </defs>
+  <path id="Regular_blob-2" data-name="Regular_blob" d="M81.5,203.8q-8.891,40.422-39.375,61.6T5.292,236.527q-6.351-50.047-5.081-71.22T1.482,61.364q0-82.77,47-53.9T92.935,99.861Q90.394,163.382,81.5,203.8Z" transform="translate(271.696 0) rotate(90)" fill="url(#linear-gradient)"/>
+</svg>

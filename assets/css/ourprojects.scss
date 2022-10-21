@@ -1,0 +1,98 @@
+#projects {
+  width: 100%;
+  margin: 0;
+  height: 100px !important;
+  padding: 10px 0;
+  box-sizing: border-box;
+  border-radius: 0 !important;
+  header {
+    width: 100%;
+    height: auto !important;
+    background-color: #fff;
+    border-radius: 0;
+  }
+}
+.container {
+  .title {
+    h2 {
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 18px;
+      margin: 0 auto;
+      width: 500px;
+    }
+  }
+  #navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    ul {
+      margin: 0 auto;
+      padding: 0;
+      li {
+        width: auto;
+        padding: 30px 30px;
+        font-weight: bold;
+        text-align: center;
+        color: #09173e;
+        cursor: pointer;
+        &.active {
+          background-image: url("../img/media/darkblob.svg");
+          background-size: 100% 100%;
+          color: #fff;
+        }
+        @media (min-width: 250px) and (max-width: 768px) {
+          padding: 15px;
+        }
+      }
+    }
+  }
+  #project-view {
+    .row {
+      margin: 30px 0;
+      .item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        justify-content: center;
+        .item-img {
+          margin-bottom: 30px;
+          width: 80%;
+          margin-right: 10px;
+        }
+        .item-title {
+          text-align: center;
+          margin-left: 15px;
+          letter-spacing: -1px;
+          text-transform: uppercase;
+          font-weight: bold;
+          font-size: 20px;
+        }
+      }
+    }
+    button {
+      all: unset;
+      color: #fff;
+      font-weight: bold;
+      display: block;
+      margin: 0 auto;
+      margin-top: -75px;
+      width: 200px;
+      height: 100px;
+      text-align: center;
+      padding: 10px 20px;
+      cursor: pointer;
+      background-image: url(../img/header/svg/yellow.svg);
+      background-size: 100% 99%;
+      transition: all 1s;
+      &:hover {
+        background-image: url(../img/header/svg/blue.svg);
+        background-size: 100% 99%;
+      }
+    }
+  }
+}

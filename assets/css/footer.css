@@ -1,0 +1,75 @@
+#footer {
+  background: linear-gradient(to right, #09173e, #2f374e);
+  position: relative;
+  height: 500px;
+  padding-top: 50px;
+}
+@media (min-width: 250px) and (max-width: 768px) {
+  #footer {
+    height: auto;
+  }
+}
+#footer .one-rights {
+  color: #fff;
+  margin-top: 10px;
+  width: 90%;
+}
+#footer .footer-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 300px;
+  margin: 0 auto;
+}
+#footer .footer-menu .data {
+  width: 150px;
+  margin: 0 a;
+}
+#footer .footer-head {
+  margin-bottom: 20px;
+  width: 100%;
+}
+#footer .footer-head h6 {
+  color: #f8bc15;
+}
+#footer .footer-list {
+  width: 100%;
+}
+#footer .footer-list ul {
+  padding: 0;
+  margin: 0 auto;
+}
+#footer .footer-list ul li {
+  width: 100%;
+  padding: 10px 0;
+  color: #fff;
+}
+#footer .footer-list ul li a {
+  color: #fff;
+  transition: all 0.5s;
+  text-decoration: none;
+}
+#footer .footer-list ul li a:hover {
+  color: #f8bc15;
+}
+#footer .footer-list ul#social {
+  display: flex;
+}
+#footer .footer-list ul#social li {
+  width: 22%;
+}
+#footer .our-rights {
+  width: 100%;
+  color: white;
+  direction: ltr;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  text-align: center;
+}
+#footer .our-rights span {
+  color: #f8bc15;
+}/*# sourceMappingURL=footer.css.map */

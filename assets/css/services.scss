@@ -1,0 +1,55 @@
+#services {
+  width: 100vw;
+  margin: 0;
+  border-radius: 0 !important;
+  height: 800px;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  @media (max-width: 767px) {
+    height: 300px;
+    padding: 0;
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+    height: 500px;
+    padding: 0;
+  }
+  .navbar-expand-lg .navbar-toggler {
+    @media (min-width: 992px) {
+      display: none;
+    }
+  }
+  header {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    background-color: #fff;
+    .title {
+      h2 {
+        font-weight: bold;
+      }
+    }
+    .row {
+      overflow: hidden;
+      height: 500px;
+      img {
+        margin-top: -10%;
+      }
+    }
+  }
+}
+#call {
+  .container {
+    background: linear-gradient(to right, #09173e, #2f374e);
+    color: #fff;
+    p {
+      align-self: flex-start;
+      button {
+        box-sizing: border-box;
+        font-size: 24px;
+        width: fit-content;
+      }
+    }
+  }
+}

@@ -1,0 +1,129 @@
+#contact {
+  height: 600px;
+  margin-bottom: 50px;
+  z-index: -1;
+}
+#contact #contact-header .header-content {
+  width: 100%;
+  height: 600px !important;
+}
+#contact #contact-header .header-content .header-overlay {
+  z-index: -1;
+  height: auto !important;
+  background-color: rgba(0, 14, 70, 0);
+}
+#contact #contact-header .header-content img.background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  width: 100%;
+  -o-object-fit: fill;
+  object-fit: fill;
+  padding: 0;
+  margin: 0;
+  z-index: -1;
+}
+#contact #contact-header .header-content .contact-head {
+  text-align: center;
+  color: #fff;
+  margin: 30px auto;
+}
+
+.form-contact {
+  margin-top: -20%;
+  z-index: 99;
+}
+@media (max-width: 580px) {
+  .form-contact {
+    margin-top: -80%;
+  }
+}
+@media (min-width: 580px) and (max-width: 767px) {
+  .form-contact {
+    margin-top: -50%;
+  }
+}
+.form-contact .container .form {
+  margin: 0 auto;
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+@media (min-width: 250px) and (max-width: 768px) {
+  .form-contact .container .form {
+    height: auto;
+  }
+}
+.form-contact .container .form .row {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.form-contact .container .form .row div {
+  margin-bottom: 7%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: right;
+}
+.form-contact .container .form .row div label {
+  font-size: 15px;
+  color: #333;
+}
+.form-contact .container .form .row div .form-control {
+  margin-top: 10px;
+  height: 50px;
+  font-size: 15px;
+}
+.form-contact .container .form .row div .form-control::-moz-placeholder {
+  color: #888888;
+}
+.form-contact .container .form .row div .form-control:-ms-input-placeholder {
+  color: #888888;
+}
+.form-contact .container .form .row div .form-control::placeholder {
+  color: #888888;
+}
+.form-contact .container .form .row div textarea {
+  height: 150px !important;
+}
+.form-contact .container .form .row div.submit {
+  height: 50px !important;
+  align-items: flex-end;
+  margin-bottom: 0%;
+}
+.form-contact .container .form .row div.submit button {
+  width: 100px;
+  background-color: #09173e;
+  font-weight: bold;
+  display: block;
+  margin-left: 0;
+  color: #fff;
+}
+
+.other .other-data {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.other .other-data .img img {
+  width: 30px;
+}
+.other .other-data .title h3 {
+  font-weight: bold;
+  font-size: 24px;
+}
+.other .other-data .text p {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 18px;
+  width: 80%;
+}/*# sourceMappingURL=contact.css.map */

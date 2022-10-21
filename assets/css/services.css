@@ -1,0 +1,58 @@
+#services {
+  width: 100vw;
+  margin: 0;
+  border-radius: 0 !important;
+  height: 800px;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+@media (max-width: 767px) {
+  #services {
+    height: 300px;
+    padding: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #services {
+    height: 500px;
+    padding: 0;
+  }
+}
+@media (min-width: 992px) {
+  #services .navbar-expand-lg .navbar-toggler {
+    display: none;
+  }
+}
+#services header {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  background-color: #fff;
+}
+#services header .title h2 {
+  font-weight: bold;
+}
+#services header .row {
+  overflow: hidden;
+  height: 500px;
+}
+#services header .row img {
+  margin-top: -10%;
+}
+
+#call .container {
+  background: linear-gradient(to right, #09173e, #2f374e);
+  color: #fff;
+}
+#call .container p {
+  align-self: flex-start;
+}
+#call .container p button {
+  box-sizing: border-box;
+  font-size: 24px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}/*# sourceMappingURL=services.css.map */
