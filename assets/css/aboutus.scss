@@ -5,7 +5,6 @@
   .header-content {
     width: 100%;
     height: 900px;
-
     img.background {
       position: absolute;
       top: 0;
@@ -15,6 +14,10 @@
       width: 100%;
       overflow: hidden;
       width: 100%;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 50% 20%;
+      border-bottom-right-radius: 50% 20%;
       -o-object-fit: fill;
       object-fit: fill;
       padding: 0;
@@ -31,6 +34,7 @@
         width: 80%;
         margin-top: -5%;
         background-image: url("../pages/aboutus/header/back.svg");
+        opacity: 0.75;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
@@ -56,21 +60,21 @@
         .text {
           display: flex;
           color: #fff;
+          width: 75%;
           flex-direction: column;
           justify-content: center;
           align-items: center;
           margin-right: 5px;
           h3 {
-            width: 100%;
             font-weight: bolder;
-            width: 85%;
+            width: 83%;
             font-size: 30px;
             margin-bottom: 10px;
             text-align: right;
           }
           p {
             text-align: right;
-            width: 85% !important;
+            width: 100% !important;
             font-weight: bold;
             font-size: 22px !important;
           }

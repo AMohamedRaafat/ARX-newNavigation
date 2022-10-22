@@ -14,16 +14,22 @@
   margin-top: 10px;
   width: 90%;
 }
+@media (min-width: 250px) and (max-width: 768px) {
+  #footer .one-rights {
+    margin-bottom: 20px;
+  }
+}
 #footer .footer-menu {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 300px;
+  height: auto;
   margin: 0 auto;
+  margin-bottom: 50px;
 }
 #footer .footer-menu .data {
-  width: 150px;
-  margin: 0 a;
+  width: 100%;
+  padding-right: 25px;
 }
 #footer .footer-head {
   margin-bottom: 20px;
@@ -36,8 +42,8 @@
   width: 100%;
 }
 #footer .footer-list ul {
+  width: 100%;
   padding: 0;
-  margin: 0 auto;
 }
 #footer .footer-list ul li {
   width: 100%;
@@ -55,14 +61,20 @@
 #footer .footer-list ul#social {
   display: flex;
 }
+@media (min-width: 250px) and (max-width: 767px) {
+  #footer .footer-list ul#social {
+    width: 50%;
+  }
+}
 #footer .footer-list ul#social li {
-  width: 22%;
+  width: 25%;
 }
 #footer .our-rights {
   width: 100%;
   color: white;
   direction: ltr;
   position: absolute;
+  margin-top: 15px;
   bottom: 0;
   display: flex;
   align-items: center;

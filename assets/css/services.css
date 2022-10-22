@@ -1,5 +1,4 @@
 #services {
-  width: 100vw;
   margin: 0;
   border-radius: 0 !important;
   height: 800px;
@@ -19,27 +18,50 @@
     padding: 0;
   }
 }
-@media (min-width: 992px) {
-  #services .navbar-expand-lg .navbar-toggler {
-    display: none;
-  }
-}
 #services header {
   width: 100%;
   height: 100%;
   position: absolute;
   overflow: hidden;
-  background-color: #fff;
+  background-color: transparent;
+  background-color: rgba(9, 23, 62, 0.5607843137);
 }
-#services header .title h2 {
-  font-weight: bold;
+#services header .header-content {
+  width: 100%;
+  height: auto !important;
 }
-#services header .row {
+#services header .header-content .media {
+  width: 100%;
+  height: auto !important;
+}
+#services header .header-content .media img.background {
+  top: 0;
+  right: 0;
+  display: block;
+  height: 100%;
+  width: 100%;
   overflow: hidden;
-  height: 500px;
+  width: 100%;
+  -o-object-fit: fill;
+  object-fit: fill;
+  padding: 0;
+  margin: 0;
+  z-index: -1;
 }
-#services header .row img {
-  margin-top: -10%;
+#services header .header-content .title {
+  margin-bottom: 30px;
+}
+#services header .header-content .title h2 {
+  font-weight: bold;
+  color: #fff;
+}
+#services header .header-content .row {
+  overflow: hidden;
+}
+@media (min-width: 250px) and (max-width: 767px) {
+  #services header .header-content .row img {
+    margin-right: -20px;
+  }
 }
 
 #call .container {

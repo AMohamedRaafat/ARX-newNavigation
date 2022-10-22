@@ -23,3 +23,7 @@ menuitem.map((el) => {
     });
   });
 });
+var video = document.getElementById("drone");
+window.onload = () => {
+  video.play();
+};

@@ -10,16 +10,20 @@
     color: #fff;
     margin-top: 10px;
     width: 90%;
+    @media (min-width: 250px) and (max-width: 768px) {
+      margin-bottom: 20px;
+    }
   }
   .footer-menu {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 300px;
+    height: auto;
     margin: 0 auto;
+    margin-bottom: 50px;
     .data {
-      width: 150px;
-      margin: 0 a;
+      width: 100%;
+      padding-right: 25px;
     }
   }
   .footer-head {
@@ -32,8 +36,8 @@
   .footer-list {
     width: 100%;
     ul {
+      width: 100%;
       padding: 0;
-      margin: 0 auto;
       li {
         width: 100%;
         padding: 10px 0;
@@ -49,8 +53,11 @@
       }
       &#social {
         display: flex;
+        @media (min-width: 250px) and (max-width: 767px) {
+          width: 50%;
+        }
         li {
-          width: 22%;
+          width: 25%;
         }
       }
     }
@@ -60,6 +67,7 @@
     color: white;
     direction: ltr;
     position: absolute;
+    margin-top: 15px;
     bottom: 0;
     display: flex;
     align-items: center;

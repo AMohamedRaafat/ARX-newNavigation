@@ -1,22 +1,33 @@
 * {
   font-family: "Cairo", sans-serif;
 }
-button.blob {
+.blob {
   all: unset;
-  width: 150px;
-  height: 100px;
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
   margin-top: 20px;
   text-align: center;
-  padding: 10px 20px;
+  padding: 20px 20px;
   background-image: url("../img/header/svg/yellow.svg");
-  background-size: 100% 99%;
+  background-size: 100% 100%;
   cursor: pointer;
   color: white;
   transition: all 1s;
   font-weight: bold;
+  text-decoration: none;
+  &.blob-right {
+    margin-right: 0 !important;
+  }
+  &.blob-width {
+    background-size: cover !important;
+    font-size: 14.5px !important;
+    height: 35px;
+  }
   &:hover {
     background-image: url("../img/header/svg/blue.svg");
-    background-size: 100% 99%;
+    background-size: 100% 100%;
+    color: #fff;
   }
 }
 #custom-nav {
@@ -24,7 +35,7 @@ button.blob {
   color: #ffffff;
   height: auto;
   background-color: #09173e !important;
-  @media (min-width: 250px) and (max-width: 960px) {
+  @media (min-width: 250px) and (max-width: 767px) {
   }
   .nav-brand img {
     width: 100.4px;
@@ -102,18 +113,20 @@ button.blob {
 .header-container {
   width: 100%;
   height: 900px;
+
   position: relative;
-  overflow: hidden;
   header {
     width: 100%;
     height: 100%;
     position: absolute;
-    overflow: hidden;
     background-color: #000e46b6;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 50% 20%;
     border-bottom-right-radius: 50% 20%;
+    @media (min-width: 250px) and (max-width: 768px) {
+      height: auto !important;
+    }
     .header-content {
       width: 100%;
       height: 900px;
@@ -128,6 +141,8 @@ button.blob {
         width: 100%;
         -o-object-fit: fill;
         object-fit: fill;
+        border-bottom-left-radius: 50% 20%;
+        border-bottom-right-radius: 50% 20%;
         padding: 0;
         margin: 0;
         z-index: -1;
@@ -254,6 +269,15 @@ button.blob {
             font-weight: 400;
             word-spacing: 2px;
           }
+          .know-more {
+            margin-right: 0 !important;
+            margin-top: 20px 0 !important;
+            &:hover {
+              background-image: url("../img/header/svg/yellow.svg");
+              background-size: 100% 100%;
+              color: #fff;
+            }
+          }
         }
         div.img {
           height: fit-content;
@@ -268,7 +292,7 @@ button.blob {
             }
             @media (min-width: 250px) and (max-width: 968px) {
               width: 450px;
-              margin-top: 50px;
+              margin-top: 60px;
             }
           }
         }
@@ -349,7 +373,7 @@ section {
       justify-content: center;
       .item-img {
         margin-bottom: 30px;
-        width: 80%;
+        width: 78% !important;
         margin-right: 10px;
       }
       .item-title {
@@ -595,6 +619,12 @@ section {
           @media (min-width: 500px) and (max-width: 768px) {
             font-size: 11px;
           }
+          @media (min-width: 250px) and (max-width: 500px) {
+            position: static;
+            font-size: 16px;
+            color: #000000;
+            font-weight: bold;
+          }
         }
         @media (min-width: 990px) and (max-width: 1200px) {
           bottom: 117px;
@@ -607,6 +637,11 @@ section {
         @media (min-width: 500px) and (max-width: 768px) {
           bottom: 109px;
           right: 75px;
+          font-size: 15px;
+        }
+        @media (min-width: 250px) and (max-width: 500px) {
+          position: static;
+          color: #9a9696;
           font-size: 15px;
         }
       }
@@ -630,7 +665,7 @@ section {
             color: #fff;
           }
           @media (min-width: 250px) and (max-width: 768px) {
-            padding: 15px;
+            padding: 10px;
           }
         }
       }
@@ -644,6 +679,7 @@ section {
       .item-thumb {
         img {
           width: 95%;
+          margin-bottom: 20px;
         }
       }
       .item-text {
