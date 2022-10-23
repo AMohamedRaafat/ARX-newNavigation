@@ -3,19 +3,25 @@
 }
 .blob {
   all: unset;
-  display: block;
+
   width: fit-content;
   margin: 0 auto;
   margin-top: 20px;
   text-align: center;
-  padding: 20px 20px;
+  padding: 8%;
   background-image: url("../img/header/svg/yellow.svg");
   background-size: 100% 100%;
   cursor: pointer;
   color: white;
   transition: all 1s;
   font-weight: bold;
-  text-decoration: none;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
   &.blob-right {
     margin-right: 0 !important;
   }
@@ -321,7 +327,11 @@ section {
   .item {
     margin-bottom: 25px;
     @media (min-width: 250px) and (max-width: 768px) {
-      margin-right: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
     }
     .item-img {
       width: 70px;
@@ -335,19 +345,25 @@ section {
     }
     .item-text {
       font-size: 16.5px;
-      width: 320px;
+      width: auto;
       height: 100px;
+      @media (min-width: 250px) and (max-width: 768px) {
+        height: 120px;
+      }
     }
     .item-link {
       color: #333 !important;
       text-decoration: none;
       font-weight: bold;
       font-size: 14px;
+      @media (min-width: 250px) and (max-width: 768px) {
+        margin-top: 20px;
+      }
     }
-  }
-  button {
-    display: block;
-    margin: 0 auto;
+    button {
+      display: block;
+      margin: 0 auto;
+    }
   }
 }
 #related-projects {

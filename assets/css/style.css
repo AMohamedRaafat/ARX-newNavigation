@@ -4,20 +4,25 @@
 
 .blob {
   all: unset;
-  display: block;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
   margin-top: 20px;
   text-align: center;
-  padding: 20px 20px;
+  padding: 8%;
   background-image: url("../img/header/svg/yellow.svg");
   background-size: 100% 100%;
   cursor: pointer;
   color: white;
   transition: all 1s;
   font-weight: bold;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+.blob a {
+  color: #fff;
   text-decoration: none;
 }
 .blob.blob-right {
@@ -336,7 +341,11 @@ section {
 }
 @media (min-width: 250px) and (max-width: 768px) {
   #services .item {
-    margin-right: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
 }
 #services .item .item-img {
@@ -351,8 +360,13 @@ section {
 }
 #services .item .item-text {
   font-size: 16.5px;
-  width: 320px;
+  width: auto;
   height: 100px;
+}
+@media (min-width: 250px) and (max-width: 768px) {
+  #services .item .item-text {
+    height: 120px;
+  }
 }
 #services .item .item-link {
   color: #333 !important;
@@ -360,7 +374,12 @@ section {
   font-weight: bold;
   font-size: 14px;
 }
-#services button {
+@media (min-width: 250px) and (max-width: 768px) {
+  #services .item .item-link {
+    margin-top: 20px;
+  }
+}
+#services .item button {
   display: block;
   margin: 0 auto;
 }
