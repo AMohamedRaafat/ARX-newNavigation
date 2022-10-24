@@ -14,7 +14,6 @@ var getSiblings = function (elem) {
 };
 var menu = document.querySelectorAll("#navigation ul li ");
 var menuitem = Array.from(menu);
-console.log(menuitem);
 menuitem.map((el) => {
   el.addEventListener("click", () => {
     el.classList.add("active");
@@ -26,4 +25,20 @@ menuitem.map((el) => {
 var video = document.getElementById("drone");
 window.onload = () => {
   video.play();
+};
+var toggler = document.getElementsByClassName("navbar-toggler");
+var togglerElement = Array.from(toggler);
+console.log(togglerElement);
+togglerElement.onclick = (e) => {
+  e.preventDefault();
+};
+function fixedNavbar() {
+  console.log("Clicked to toggle");
+  var navElement = document.getElementById("navbarContent");
+  navElement.classList.toggle("fixed-nav");
+}
+var closeNav = document.getElementById("closeNav");
+closeNav.onclick = (e) => {
+  var navElement = document.getElementById("navbarContent");
+  navElement.classList.remove("fixed-nav");
 };

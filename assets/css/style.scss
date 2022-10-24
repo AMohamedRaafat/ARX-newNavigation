@@ -166,8 +166,7 @@
         color: #ffffff;
         height: auto;
         background-color: transparent;
-        @media (min-width: 250px) and (max-width: 960px) {
-        }
+
         .nav-brand img {
           width: 100.4px;
           height: 106.98px;
@@ -179,6 +178,9 @@
         }
 
         .nav-container {
+          @media (min-width: 250px) and (max-width: 960px) {
+            display: none;
+          }
           div {
             margin: 0 auto;
             @media (min-width: 250px) and (max-width: 960px) {
@@ -310,6 +312,76 @@
     }
   }
 }
+#closeNav {
+  display: none;
+}
+.fixed-nav {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  bottom: 0%;
+  right: 0%;
+  z-index: 99;
+  background-color: #09173e8f !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  @media (min-width: 960px) {
+    display: block;
+  }
+  #closeNav {
+    all: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 25px;
+    border-radius: 10px 10px 0 0;
+    cursor: pointer;
+    i {
+      z-index: 100;
+      color: #fff;
+      font-weight: bold;
+      font-size: 35px;
+    }
+  }
+  div {
+    border-radius: 10px 10px 0 0;
+    height: 50%;
+    width: 50% !important;
+    background-color: #09173e !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  ul {
+    padding: 0 !important;
+    li {
+      padding: 10px;
+    }
+  }
+  .more {
+    height: 10%;
+    width: 50% !important;
+    border-radius: 0 0 20px 20px;
+
+    div {
+      display: flex;
+      justify-content: center;
+      width: 100% !important;
+      margin-right: 0 !important;
+      a {
+        display: block !important;
+        height: 38px;
+      }
+    }
+  }
+}
+.fixed:not(.fixed-nav) {
+  display: none;
+}
+
 section {
   margin: 25px 0;
   padding: 25px 0;
